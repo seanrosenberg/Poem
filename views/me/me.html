@@ -1,0 +1,60 @@
+<ion-view title="我的"  hide-back-button="true">
+    <ion-nav-buttons side="right">
+        <button class="button meGear button-clear">
+            <i class="icon ion-ios-gear-outline"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-content class="selectBg paddingTen">
+        <div class="userMe">
+            <img ng-src="{{touxiang}}">
+        </div>
+        <h3 class="singIn ccc">{{name}}</h3>
+        <div class="row rowTOP" ng-show="!show">
+            <div class="col">
+                <button class="button-clear" ui-sref="login">登录</button>
+            </div>
+            <div class="col col2">
+                <button class="button-clear" ui-sref="registered">注册</button>
+            </div>
+        </div>
+        <div class="row rowDown ccc" style="padding: 0;">
+            <div class="col">
+                <button class="button-clear"
+                        ng-click="iReadShow()" ng-class="iRead==true?'activeMe':''">
+                    <i class="icon ion-ios-clock-outline"></i>
+                    最近读诗
+                </button>
+            </div>
+            <div class="col">
+                <button class="button-clear"
+                        ng-click="iLike()" ng-class="iLikeShow==true?'activeMe':''">
+                    <i class="icon ion-ios-heart-outline"></i>
+                    我喜欢的
+                </button>
+            </div>
+        </div>
+        <ion-list ng-show="iLikeShow">
+            <ion-item class="item item-thumbnail-left textListMy ccc"
+                      ng-repeat="product in data.productList | filter:{'like':'true'}  track by $index"
+                      ng-click="toDetail(product)">
+                <img ng-src="{{product.txImgsrc}}" >
+                <p>{{product.bTitle}}</p>
+                <span class="authorInfo">《{{product.title}}》／{{product.authorInfo}}</span>
+                <i class="icon ion-ios-arrow-right"></i>
+                <ion-option-button class="button ccc"
+                                   ng-click="nolike(product)" style="color: #666;">删除</ion-option-button>
+            </ion-item>
+        </ion-list>
+        <ion-list ng-show="iRead">
+            <ion-item class="item item-thumbnail-left textListMy ccc"
+                      ng-repeat="product in data.productList | filter:{'show':'true'} | orderBy:-'readNum' track by $index"
+                      ng-click="toDetail(product)">
+                <img ng-src="{{product.txImgsrc}}" >
+                <p>{{product.bTitle}}</p>
+                <span class="authorInfo">《{{product.title}}》／{{product.authorInfo}}</span>
+                <i class="icon ion-ios-arrow-right"></i>
+                <ion-option-button class="button ccc" ng-click="noshow(product)" style="color: #666;">删除</ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

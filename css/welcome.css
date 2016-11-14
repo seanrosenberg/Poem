@@ -1,0 +1,6 @@
+
+.welcome ion-slide{width: 100%;height: 100%;}
+.welcome ion-slide img{width: 100%;height: 100%;}
+.slider-pager-page.active i{color: #faca4e;}
+.welcome-btn{background: transparent;position: absolute;bottom: 83px;left: 119px;width: 197px;height: 38px;z-index: 99;border-radius: 30px;}
+.welcome-btn.activated{background: transparent;border-color: transparent;}

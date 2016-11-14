@@ -1,0 +1,109 @@
+.clear:after{content: "200B";font-size: 0;height: 0;clear: both;display: block;}
+.clear{*zoom: 1;}
+.footerZindex{z-index: -1!important;}
+.xiangqing{height: 100%;}
+.suffixMy{position: relative;}
+.tabsIndex{text-align: center;font-family: Arial,'ccc','黑体'!important;}
+.tabsIndex p{margin-top: -6px;font-size: 14px;}
+.indexHeader{background: rgba(221,221,221,0.7)!important;}
+.indexHeader .title{font-family: Arial,"ccc",'黑体'!important;}
+.indexHeader .searchMy{width: 18px;height: 15px;margin-top: 10px;margin-right: 10px;}
+.toRead{background: #9bbed0;color: #fff!important;clear:both;text-align: center;letter-spacing: 2px;}
+.timeRead{clear:both;letter-spacing: 1px;font-size: 12px;color: #000!important;position: absolute;right: 0;bottom: -10px;}
+.textTitle{font-family: Arial,"ccc",'黑体'!important;font-size: 38px!important;padding: 20px 23% 0;
+    text-align: center;white-space: pre-line!important;line-height: 46px;color:#000;}
+.onLoadpoem{font-family: Arial,"ccc",'黑体'!important;font-size: 14px!important;text-align: center;letter-spacing: 2px!important;
+    color: #333!important;white-space: pre-line!important;padding: 10px 22% 0;font-weight: 700;}
+.lineSegment{width: 30%;height: 1px;background: #c9c9c9;margin: 20px auto 15px;}
+.authorInfo{font-family: Arial,"ccc",'黑体'!important;font-size: 16px;text-align: center;color: #000;letter-spacing: 1px!important;
+    margin-bottom: 12px!important;}
+.SerialNumber{width: 75px;height: 15px;color: #fff!important;background: #afcbd9;margin: 0 auto 4px;
+    text-align: center;line-height: 15px;font-size: 16px;}
+.commentsMy{background: url("../images/icon_03.png") no-repeat;background-size: 300px 70px;}
+.iconMy-1{width: 23px;height: 14px;display: inline-block;font-size: 12px;line-height: 9px;padding-left: 20px;}
+.iconMy-2{width: 23px;height: 14px;display: inline-block;background-position: -92px 0;
+    font-size: 12px;line-height: 9px;padding-left: 20px;margin-left: 10px;}
+.xiangSuffixMy{position: relative;}
+.xiangSuffixMy .iconMy-1{width: 35px!important;position: absolute;left: 0;top: 0;}
+.xiangSuffixMy .iconMy-2{width: 35px!important;position: absolute;left: 38px;top: 0;}
+.xiangSuffixMy .textMyRead{line-height: 9px;height: 14px;}
+.textMyRead{font-size: 12px;margin-right: 20px;color: #999;position: absolute;right: 0;top: 0;}
+.textMyRead span{color: #333;}
+.myTabs{height: 44px;}
+.padding-0{padding: 0;}
+.myTabs .col{font-size: 12px;text-align: center;}
+.tabMyPic{
+    background: url("../images/icon_03.png") no-repeat;background-size: 300px 70px;height: 17px;width: 26px;margin: 0 auto;display: inline-block;
+    /*background: url("../images/icon_03.png" ) no-repeat;height:40px*/
+}
+.tab-home .tabMyPic{background-position: 0 -51px;width: 21px;}
+.tab-select .tabMyPic{background-position: -92px -51px;}
+.tab-seek .tabMyPic{background-position: -187px -51px;}
+.tab-me .tabMyPic{background-position: -280px -51px;}
+.activeMy{color: #1d5574!important;}
+.tab-home.activeMy .tabMyPic{background-position: 0 -18px!important;}
+.tab-select.activeMy .tabMyPic{background-position: -92px -18px!important;}
+.tab-seek.activeMy .tabMyPic{background-position: -187px -18px!important;}
+.tab-me.activeMy .tabMyPic{background-position: -280px -18px!important;}
+.selectBg{background: #f1f1f1;}
+.selectItem{margin: 10px 25px 0;padding:10px 20px 0;}
+.selectMyPic{width: 100%;height: auto;margin: 0 auto;}
+.selectMyPic .SerialNumber{color: #fff!important;background: rgba(142,170,182,.8);margin: -40px auto 20px;
+    text-align: center;line-height: 20px;font-size: 16px;width: 100px;height: 20px;position: relative;z-index: 9;}
+.selectMyPic img{width: 100%;height: auto;}
+.selectLoad{padding:15px 0 10px 0;}
+.searchLabel{background: transparent!important;width: 100%;margin-top: 9px;}
+.indexHeader .searchInput{width: 78%;border-radius: 7px;padding-left: 5px;background: #d2d2d2;height: 25px;font-size: 14px!important;}
+.searchInputButton{right: -12px;position: absolute;top: 4px;}
+.seekBg{background: #f6f6f6;}
+.paddingTen{}
+.MyseekDl{padding: 10px 22px 0;}
+.MyseekDl dt{font-size: 13px;color: #999;font-family: Arial,"ccc",'黑体'!important;font-weight: normal;}
+.MyseekDl dd{font-family: Arial,"ccc",'黑体'!important;font-size: 13px;float: left;margin: 9px 7px 0 0;padding: 5px 10px;background: #fff;border-radius: 5px;color: #333;}
+.ddActive{background: #9bbed0!important;}
+.tuijian{font-size: 14px;font-family: Arial,"ccc",'黑体'!important;}
+.tuijian .pointDian{width: 4px;height: 4px;background: #9bbed0;display: inline-block;float: left;margin: 8px 5px 40px 0;}
+.contentSeek{padding: 20px 12px 0;clear:both;}
+.textListMy{padding: 6px 0;margin-left: 26px;border:none;border-bottom: 1px solid #e3e2e2;margin-top: 2px;
+    background:#F1F1F1!important;}
+.seekBg .textListMy{background:#f6f6f6!important;}
+.seekBg .textListMy .item-content{background:#f6f6f6!important;}
+.seekBg .textListMy .item-content .ccc{background:#f6f6f6!important;}
+.textListMy .item-content{background: #F1F1F1!important;}
+.textListMy .ccc{background: #F1F1F1!important;}
+.textItemPic{width: 22%;display: inline-block}
+.textItemPic img{width: 100%;height: auto;}
+.textListMy p{color: #000;font-size: 14px;font-weight: 400;line-height: 40px;font-family: Arial,"ccc",'黑体'!important;}
+.authorInfo{font-size: 13px;color: #666;}
+.textListMy i{position: absolute;right: 8px;top: 35%;font-size: 40px;color:#666;font-weight: normal;}
+.meGear i:before{color: #4f7890;font-size: 25px!important;}
+.selectBg .userMe{width: 75px;height: 75px;background: #c7c7c7 url("../images/name.png") no-repeat center;border-radius: 50%;margin: 17px auto 0;
+    box-shadow:0 1px 2px 0 rgba(0,0,0,0.4);background-size:29px 37px;overflow: hidden;}
+.selectBg .userMe img{width: 100%;height: auto;}
+.selectBg .singIn{text-align: center;margin-top: 10px;margin-bottom:0;font-size: 18px;}
+.selectBg .rowTOP .col button{float: right;color: #9bbed0;line-height: 5px;display: block;font-family: Arial,"ccc",'黑体'!important;
+    padding: 10px 25px;border: 1px solid #9bbed0;border-radius: 5px;}
+.selectBg .rowTOP .col2 button{float: left;}
+.selectBg .rowDown .col{text-align: center;padding: 0;margin-top: 35px;margin-bottom: 25px;}
+.selectBg .rowDown .col button{color: #9bbed0;text-align: center;width: 100%;}
+.selectBg .rowDown .col button.activeMe{background: #9bbed0;color: #fff;}
+.seekBg .item-thumbnail-left, .item-thumbnail-left .item-content{min-height: 80px;}
+.selectBg .item-thumbnail-left, .item-thumbnail-left .item-content{min-height: 80px;}
+.home_xiang{text-align: center;}
+.home_xiang h3{font-size: 18px;}
+.home_xiang .authorInfo{font-size: 12px;}
+.home_xiang .textNeirong{font-size: 14px;line-height: 25px;}
+.login .touxiang{width: 84px;height: 84px;background: url("../images/touxiang.png") no-repeat center;margin: 44px auto 20px;
+    border-radius: 12px;background-size: 84px 84px;box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);}
+.login .list-inset{margin: 20px 20px;background: #f1f1f1;}
+.login label{margin-bottom: 5px;background: #cfcfcf;text-align: center;}
+.login input{text-align: center;padding-right: 8px!important;}
+.login button{background: #1d5574;color: #fff;}
+.login button.activated{opacity: .8;background: #1d5574;}
+.forget{font-size: 12px;color: #999;text-align: center;display: block;
+    margin-top: -10px;text-decoration: none;}
+.login p.ccc{margin-top: 40px;text-align: center;}
+.otherIcon{width: 170px;margin: 0 auto;padding-top: 10px;}
+.otherIcon a{margin: 0 10px 0;}
+.otherIcon a.activated{opacity: .8;}
+.otherIcon img{width: 33px;height: 33px;}

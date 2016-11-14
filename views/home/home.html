@@ -1,0 +1,30 @@
+<ion-view title="读诗" hide-back-button="true">
+    <ion-nav-buttons side="right">
+        <img src="./images/sech_06.png" class="searchMy" ui-sref="search">
+    </ion-nav-buttons>
+    <ion-content class="paddingTen">
+        <!--下拉刷新-->
+        <ion-refresher pulling-icon="icon ion-fork" pulling-text="下拉刷新" on-pulling="refresh()"></ion-refresher>
+        <ion-list>
+            <ion-item style="padding: 0;margin-bottom: 20px;" ng-repeat="product in data.productList"  ng-click="toDetail(product)">
+                <div style="width: 100%;margin-top: -44px;">
+                    <img ng-src="{{product.bigImgsrc}}" style="width: 100%;height: auto;float: left;">
+                </div>
+                <p class="toRead">TO READ</p>
+                <h3 class="textTitle">{{product.bTitle}}</h3>
+                <p class="onLoadpoem">{{product.titleinfo}}</p>
+                <div class="lineSegment"></div>
+                <p class="authorInfo">《 {{product.title}} 》/{{product.authorInfo}}</p>
+                <div class="SerialNumber">NO.{{product.id}}</div>
+                <div class="suffixMy">
+                    <span class="commentsMy iconMy-1">{{product.comments}}</span>
+                    <span class="commentsMy iconMy-2">{{product.collection}}</span>
+                    <span class="textMyRead">阅读数：<span>{{product.loadNum}}</span></span>
+                </div>
+            </ion-item>
+            <!--下拉添加-->
+            <ion-infinite-scroll distance="1%" ng-if="total>page"
+                                 on-infinite="infinite()" immediate-check="false"></ion-infinite-scroll>
+        </ion-list>
+    </ion-content>
+</ion-view>

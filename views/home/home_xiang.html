@@ -1,0 +1,16 @@
+<ion-view title="读诗">
+    <ion-content class="home_xiang">
+        <div class="clear" style="width: 100%;margin-top: -44px;position: relative;">
+            <img ng-src="{{product.bigImgsrc}}" style="width: 100%;height: auto;float: left;">
+            <p class="timeRead">2016.05.02</p>
+        </div>
+        <h3 class="clear ccc">《 {{product.title}} 》</h3>
+        <p class="authorInfo">作者/{{product.authorInfo}}</p>
+        <p class="ccc textNeirong" ng-repeat="text in product.text track by $index">{{text}}</p>
+        <div class="suffixMy xiangSuffixMy">
+            <span class="commentsMy iconMy-1">{{product.comments}}</span>
+            <span class="commentsMy iconMy-2" ng-click="like(product)">{{product.collection}}</span>
+            <span class="textMyRead">阅读数：<span>{{product.loadNum}}</span></span>
+        </div>
+    </ion-content>
+</ion-view>

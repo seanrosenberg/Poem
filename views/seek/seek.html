@@ -1,0 +1,35 @@
+<ion-view hide-back-button="true">
+    <ion-nav-title>
+        <label class="item-input-wrapper searchLabel ccc">
+            <input type="text" placeholder="请输入作者名字，如‘白桦’" class="searchInput">
+            <button class="button button-clear searchInputButton">
+                <img src="./images/sech_06.png" class="searchMy">
+            </button>
+        </label>
+    </ion-nav-title>
+    <ion-content class="seekBg paddingTen">
+        <!--下拉刷新-->
+        <ion-refresher pulling-icon="icon ion-fork" pulling-text="下拉刷新" on-pulling="refresh()"></ion-refresher>
+        <dl class="MyseekDl ccc">
+            <dt>关键词</dt>
+            <dd ng-repeat="authorInfo in newauthor"
+                ng-class="bg[$index]" ng-click="isddActive($index,authorInfo)">
+                {{authorInfo}}
+            </dd>
+        </dl>
+        <div class="contentSeek">
+            <p class="tuijian"><i class="pointDian"></i>您可能会喜欢</p>
+        </div>
+        <ion-list>
+            <ion-item class="item item-thumbnail-left textListMy"
+                      ng-repeat="product in data.productList |testFilter:authorInfo | filter:{'iflike':'true'} track by $index"
+                      ng-click="toDetail(product)">
+                <img ng-src="{{product.txImgsrc}}" >
+                <p>{{product.bTitle}}</p>
+                <span class="authorInfo">《{{product.title}}》／{{product.authorInfo}}</span>
+                <i class="icon ion-ios-arrow-right"></i>
+                <ion-option-button class="button  ccc" ng-click="noiflike(product)" style="color: #666;background: #f6f6f6!important;">删除</ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

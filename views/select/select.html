@@ -1,0 +1,17 @@
+<ion-view title="精选" hide-back-button="true">
+    <ion-content class="selectBg paddingTen">
+        <!--下拉刷新-->
+        <ion-refresher pulling-icon="icon ion-fork" pulling-text="下拉刷新" on-pulling="refresh()"></ion-refresher>
+        <ion-list>
+            <ion-item class="selectItem" ng-repeat="product in data.productList  track by $index" ng-click="toDetail(product)">
+                <div class="selectMyPic ccc">
+                    <img ng-src="{{product.smallImgsrc}}">
+                    <div class="SerialNumber">NO.{{product.id}}</div>
+                    <p class="onLoadpoem selectLoad">{{product.title}}</p>
+                    <p class="authorInfo">作者：{{product.authorInfo}}</p>
+                    <p class="authorInfo" ng-repeat="textMini in product.miniText  track by $index">{{textMini}}</p>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
