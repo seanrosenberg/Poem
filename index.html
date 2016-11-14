@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta charset="UTF-8">
+    <title>读诗	</title>
+    <link rel="stylesheet" href="lib/css/ionic.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body ng-app="myapp" ng-controller="myCtrl">
+<ion-nav-bar class="indexHeader" align-title="center">
+    <ion-nav-back-button class="nav-title-slide-ios7"      style="color: #1e5674;">
+    </ion-nav-back-button>
+</ion-nav-bar>
+<ion-nav-view></ion-nav-view>
+<ion-footer-bar class="myTabs">
+    <div class="row tabsIndex">
+        <div class="col padding-0 tab-home ttabs" ng-class="closs1?'activeMy':''" ng-click="showClass1()" ui-sref="home">
+            <div class="tabMyPic"></div>
+            <p class="ccc">今天</p>
+        </div>
+        <div class="col padding-0 tab-select ttabs" ng-class="closs2?'activeMy':''" ng-click="showClass2()" ui-sref="select">
+            <div class="tabMyPic"></div>
+            <p class="ccc">精选</p>
+        </div>
+        <div class="col padding-0 tab-seek ttabs" ng-class="closs3?'activeMy':''" ng-click="showClass3()" ui-sref="seek">
+            <div class="tabMyPic"></div>
+            <p class="ccc">发现</p>
+        </div>
+        <div class="col padding-0 tab-me ttabs" ng-class="closs4?'activeMy':''" ng-click="showClass4()" ui-sref="me">
+            <div class="tabMyPic"></div>
+            <p class="ccc">我的</p>
+        </div>
+    </div>
+</ion-footer-bar>
+</body>
+<script src="lib/js/ionic.bundle.js"></script>
+<script src="js/app.js"></script>
+<script src="views/home/homeCtrl.js"></script>
+<script src="views/home/xiangCtrl.js"></script>
+<script src="views/seek/seekCtrl.js"></script>
+<script src="views/select/selectCtrl.js"></script>
+<script src="views/me/meCtrl.js"></script>
+<script src="views/me/loginCtrl.js"></script>
+
+
+</html>
